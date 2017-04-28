@@ -48,29 +48,8 @@ export default class App extends Component {
          </Right>
        </Header>
         <Content style={{flexGrow: 1}} padder>
-         <Picker
-            iosHeader="Select one"
-            mode="dropdown"
-            selectedValue={this.state.selected1}
-            onValueChange={this.onValueChange.bind(this)}>
-            <Item label="Wallet" value="key0" />
-            <Item label="ATM Card" value="key1" />
-            <Item label="Debit Card" value="key2" />
-            <Item label="Credit Card" value="key3" />
-            <Item label="Net Banking" value="key4" />
-         </Picker>
+          <Button><Text>Hello</Text></Button>
         </Content>
-        <FooterTab>
-          <Button style={{borderStyle: 'none'}}>
-            <Text>Camera</Text>
-          </Button>
-          <Button active style={{borderStyle: 'none'}}>
-            <Text>Navigate</Text>
-          </Button>
-          <Button style={{borderStyle: 'none'}}>
-            <Text>Contact</Text>
-          </Button>
-        </FooterTab>
       </Container>
     );
   }
